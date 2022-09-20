@@ -1,0 +1,277 @@
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo2 {
+        animation: App-logo-spin2 infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes App-logo-spin2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.black,
+.white {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    color: black;
+    background-color: white;
+}
+
+.cat {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(30deg);
+}
+
+.cat span {
+    color: pink;
+    transform: rotate(-30deg);
+}
+
+.dog-bin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    .dog {
+        width: 150px;
+        height: 150px;
+        color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: skyblue;
+        margin: 6px;
+        &.cc {
+            border-radius: 50%;
+        }
+        &.sq {
+            border-radius: 10px;
+        }
+    }
+}
+
+input {
+    font-size: 30px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.field {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-color: skyblue;
+    .left {
+        width: 49%;
+        height: 100vh;
+        border-right: 3px dashed orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .right {
+        width: 49%;
+        height: 100vh;
+        border-left: 3px dashed orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    h1 {
+        position: absolute;
+        top: 15px;
+        font-size: 48px;
+        background-color: skyblue;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 48px;
+        button {
+            margin-left: 10px;
+            position: relative;
+            top: 4px;
+        }
+    }
+    .cow {
+        width: 120px;
+        height: 120px;
+        border: 1px dashed olive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 7px;
+    }
+    .sheep {
+        width: 120px;
+        height: 120px;
+        border: 1px dashed grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-radius: 50%;
+        font-size: 15px;
+        font-weight: bold;
+        margin: 7px;
+    }
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border: 3px dashed skyblue;
+    border-radius: 5px;
+    input {
+        font-size: 30px;
+        outline: none;
+        border: none;
+        padding: 5px;
+        margin: 10px;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.red-square {
+    border: 3px dotted crimson;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        color: crimson;
+    }
+}
+
+ul.trees {
+    padding: 10px;
+    margin: 10px;
+    border: 3px dashed skyblue;
+}
+
+.tree-row {
+    list-style: none;
+    &>* {
+        margin: 0 8px;
+    }
+}
+
+.create-form {
+    padding: 10px;
+    margin: 10px;
+    border: 3px dashed skyblue;
+}
+
+.edit-form {
+    padding: 10px;
+    margin: 10px;
+    border: 3px dashed skyblue;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    span,
+    input,
+    select {
+        font-size: 30px;
+        outline: none;
+        border: none;
+        padding: 5px;
+        margin: 10px;
+    }
+}
+
+.edit-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34cc;
+}
